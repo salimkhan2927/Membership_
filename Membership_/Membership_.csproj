@@ -184,6 +184,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Documents\document.jfif" />
     <Content Include="Content\Images\C-Tutorials.png" />
     <Content Include="Content\Images\cSharpZip.png" />
     <Content Include="Content\Images\laptop.jfif" />
