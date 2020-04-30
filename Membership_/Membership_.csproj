@@ -190,6 +190,8 @@
     <Content Include="Content\Images\pdf.jfif" />
     <Content Include="Content\Images\unitTesting.jfif" />
     <Content Include="Content\Images\video2.jfif" />
+    <Content Include="Content\Logos\membership1.jpg" />
+    <Content Include="Content\Logos\membership2.jfif" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
