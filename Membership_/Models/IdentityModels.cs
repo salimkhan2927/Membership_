@@ -22,6 +22,7 @@ namespace Membership_.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public DbSet<Section> Sections { get; set; }
+        public DbSet<Part> Parts { get; set; }
 
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
