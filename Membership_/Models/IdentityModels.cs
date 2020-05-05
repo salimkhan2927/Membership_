@@ -25,6 +25,7 @@ namespace Membership_.Models
         public DbSet<Part> Parts { get; set; }
         public DbSet<ItemType> ItemTypes { get; set; }
         public DbSet<Item> Items { get; set; }
+        public DbSet<Product> Products { get; set; }
 
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
