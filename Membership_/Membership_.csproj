@@ -229,6 +229,11 @@
     <Content Include="Areas\Admin\Views\Shared\_CreateButtonPartial.cshtml" />
     <Content Include="Areas\Admin\Views\Shared\_SmallButtonPartial.cshtml" />
     <Content Include="Areas\Admin\Views\Shared\_TableButtonsPartial.cshtml" />
+    <Content Include="Areas\Admin\Views\Part\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Part\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Part\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Part\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Part\Details.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -279,7 +284,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Data\" />
-    <Folder Include="Areas\Admin\Views\Part\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
