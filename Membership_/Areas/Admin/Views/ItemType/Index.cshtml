@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Membership_.Entities.Part>
+﻿@model IEnumerable<Membership_.Entities.ItemType>
 @using Membership_.Areas.Admin.Models
 @{
     ViewBag.Title = "Index";
@@ -17,14 +17,13 @@
         <th></th>
     </tr>
 
-    @foreach (var item in Model)
-    {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Title)
-            </td>
-            @Html.Partial("_TableButtonsPartial", new SmallButtonModel { Id = item.Id })
-        </tr>
-    }
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Title)
+        </td>  
+           @Html.Partial("_TableButtonsPartial",new SmallButtonModel { Id=item.Id})  
+    </tr>
+}
 
 </table>
