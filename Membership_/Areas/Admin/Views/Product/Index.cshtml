@@ -1,5 +1,6 @@
-﻿@model IEnumerable<Membership_.Entities.Item>
+﻿@model IEnumerable<Membership_.Areas.Admin.Models.ProductModel>
 @using Membership_.Areas.Admin.Models
+
 @{
     ViewBag.Title = "Index";
 }
@@ -19,15 +20,13 @@
         </th>
        
         <th>
-            @Html.DisplayNameFor(model => model.HTML)
+            @Html.DisplayNameFor(model => model.ProductLinkText)       
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.WaitDays)
+            @Html.DisplayNameFor(model => model.ProductType)
         </th>
        
-        <th>
-            @Html.DisplayNameFor(model => model.IsFree)
-        </th>
+        
         <th>Action</th>
     </tr>
 
@@ -42,15 +41,15 @@
             </td>
           
             <td>
-                @Html.DisplayFor(modelItem => item.HTML)
+                @Html.DisplayFor(modelItem => item.ProductLinkText)
+                (@{@Html.DisplayFor(modelItem => item.ProductLinkTextId) })
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.WaitDays)
+                @Html.DisplayFor(modelItem => item.ProductType)
+                (@{@Html.DisplayFor(modelItem => item.ProductTypeId) })
             </td>
            
-            <td>
-                @Html.DisplayFor(modelItem => item.IsFree)
-            </td>
+            
             @Html.Partial("_TableButtonsPartial", new SmallButtonModel { Id = item.Id })
         </tr>
     }

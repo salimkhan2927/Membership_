@@ -10,6 +10,7 @@ namespace Membership_.Areas.Admin.Models
 {
     public class ProductModel
     {
+        public Product Product { get; set; }
         public int Id { get; set; }
 
         [Required]
@@ -27,10 +28,13 @@ namespace Membership_.Areas.Admin.Models
 
         public int ProductTypeId { get; set; }
 
+        [DisplayName("Product Link Texts")]
         public ICollection<ProductLinkText> ProductLinkTexts { get; set; }
 
+        [DisplayName("Product Types")]
         public ICollection<ProductType> ProductTypes { get; set; }
 
+        [DisplayName("Product Type")]
         public string ProductType 
         { 
             get
@@ -39,6 +43,7 @@ namespace Membership_.Areas.Admin.Models
             }
         }
 
+        [DisplayName("Product Link Text")]
         public string ProductLinkText
         {
             get
