@@ -22,3 +22,8 @@ select,
 textarea {
     max-width: 280px;
 }
+.tblButtonsPartial {
+    float: right;
+    margin-right: -6px;
+}
+

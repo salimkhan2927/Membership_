@@ -1,7 +1,13 @@
 ﻿@model Membership_.Areas.Admin.Models.SmallButtonModel
 @using Membership_.Areas.Admin.Models
+<style>
+    .tblButtonsPartial {
+        float: right;
+        margin-right: -6px;
+    }
+</style>
 <td style="width:120px;">
-    <div class="btn-group" role="group">
+    <div class="btn-group tblButtonsPartial" role="group">
         @Html.Partial("_SmallButtonPartial",
             new SmallButtonModel
             {
